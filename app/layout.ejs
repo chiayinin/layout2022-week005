@@ -9,54 +9,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+    <div class="d-flex">
+      <aside class="bg-light vh-100 d-flex flex-column pt-5">
+        <!-- logo -->
+        <figure class="mb-5 ms-5">
+          <img src="./assets/images/logo-ANSWER.svg" alt="answer logo">
+        </figure>
+        <div class="h-100 d-flex flex-column justify-content-between ms-5">
+          <!-- menu -->
+          <ul class="list-group">
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">assessment</span>Dashboard</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">question_answer</span>Question</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="./index.html"><span class="material-icons me-3 align-bottom">assignment</span>Assignment</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">video_library</span>Course</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="./admin.html"><span class="material-icons me-3 align-bottom">people</span>Admin</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">settings</span>Settings</a>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <!-- user -->
+          <div class="card d-flex flex-row align-items-center border-0 bg-light mb-5">
+            <img src="./assets/images/andychen.jpeg" class="flex-shrink-0 user-photo rounded-circle img-fluid " alt="andy chen">
+            <div class="card-body flex-grow-1 ms-3">
+              <h5 class="card-title">Andy Chen</h5>
+              <p class="card-text text-secondary">andy0401@mail.com</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <%- contents %>
-
-    <footer class="footer">
-      footer
-    </footer>
-
+      </aside>
+      <%- contents %>
+    </div>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
