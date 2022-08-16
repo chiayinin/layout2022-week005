@@ -1,0 +1,16 @@
+// 全站樣式設定
+// 預設字體
+body {
+	font-family: 'Lato', 'Roboto Mono', sans-serif;
+}
+
+/* 圖片無留白 */
+img {
+  vertical-align: middle;
+}
+
+/* 其他設定 */
+*, *::before, *::after {
+	text-decoration: none;
+	box-sizing: border-box;
+}
