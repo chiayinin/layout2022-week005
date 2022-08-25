@@ -1,10 +1,46 @@
----
-title: ANSWER Assignment
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<nav class="d-flex align-items-center p-5 mb-12">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANSWER Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+      <aside class="bg-light vh-100 d-flex flex-column pt-5 position-fixed">
+        <!-- logo -->
+        <figure class="mb-5 ms-5">
+          <img src="./assets/images/logo-ANSWER.svg" alt="answer logo">
+        </figure>
+        <div class="h-100 d-flex flex-column justify-content-between ms-5">
+          <!-- menu -->
+          <ul class="list-group">
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">assessment</span>Dashboard</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">question_answer</span>Question</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="./index.html"><span class="material-icons me-3 align-bottom">assignment</span>Assignment</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">video_library</span>Course</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="./admin.html"><span class="material-icons me-3 align-bottom">people</span>Admin</a>
+            <a class="list-group-item bg-light px-0 mb-4 fw-bolder" href="#"><span class="material-icons me-3 align-bottom">settings</span>Settings</a>
+          </ul>
+          <!-- user -->
+          <div class="card d-flex flex-row align-items-center border-0 bg-light mb-5">
+            <img src="./assets/images/andychen.jpeg" class="flex-shrink-0 user-photo rounded-circle img-fluid " alt="andy chen">
+            <div class="card-body flex-grow-1">
+              <h5 class="mb-1">Andy Chen</h5>
+              <p class="card-text text-secondary">andy0401@mail.com</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div style="margin-left: 296px;">
+        <nav class="d-flex align-items-center p-5 mb-12">
   <h2 class="h1 mb-0 me-50">Assignment</h2>
 
   <div class="d-flex justify-content-between align-items-center w-100">
@@ -196,3 +232,9 @@ current: index
 
 
 </main>
+
+      </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
