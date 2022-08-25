@@ -14,8 +14,7 @@
       rel="stylesheet">
   </head>
   <body>
-    <div class="d-flex">
-      <aside class="bg-light vh-100 d-flex flex-column pt-5">
+      <aside class="bg-light vh-100 d-flex flex-column pt-5 position-fixed">
         <!-- logo -->
         <figure class="mb-5 ms-5">
           <img src="./assets/images/logo-ANSWER.svg" alt="answer logo">
@@ -40,8 +39,9 @@
           </div>
         </div>
       </aside>
-      <%- contents %>
-    </div>
+      <div style="margin-left: 296px;">
+        <%- contents %>
+      </div>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
